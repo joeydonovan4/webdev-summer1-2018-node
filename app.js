@@ -37,4 +37,7 @@ app.use(session({
 var users = require('./routes/users');
 app.use('/api/users', users);
 
+var sections = require('./routes/sections');
+app.use('/api/sections', sections);
+
 app.listen(4000);
