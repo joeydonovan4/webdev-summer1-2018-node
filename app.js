@@ -34,6 +34,9 @@ app.use(session({
     secret: 'any string'
 }));
 
+var home = require('./routes/home');
+app.use('/api', home);
+
 var users = require('./routes/users');
 app.use('/api/users', users);
 
