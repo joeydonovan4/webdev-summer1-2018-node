@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/joeydonovan4/webdev-summer1-2018-node#readme",
   "dependencies": {
+    "bcrypt": "^2.0.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
