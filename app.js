@@ -34,4 +34,7 @@ app.use(session({
     secret: 'any string'
 }));
 
+var users = require('./routes/users');
+app.use('/api/users', users);
+
 app.listen(4000);
