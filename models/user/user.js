@@ -10,6 +10,7 @@ const userSchema = mongoose.Schema({
         lastName: String,
     },
     email: {type: String, required: true},
+    admin: Boolean,
     sections: [String]
 },
 {
