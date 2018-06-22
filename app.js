@@ -31,7 +31,11 @@ var session = require('express-session');
 app.use(session({
     resave: false,
     saveUninitialized: true,
-    secret: 'any string'
+    secret: 'any string',
+    cookie: {
+        maxAge: 30 * 60 * 1000
+    },
+    rolling: true
 }));
 
 var home = require('./routes/home');
