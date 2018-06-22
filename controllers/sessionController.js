@@ -30,4 +30,8 @@ sessionController.logout = (req, res) => {
     res.send(200);
 };
 
+sessionController.getCurrentUser = (req, res) => {
+    res.send(req.session['user']);
+}
+
 module.exports = sessionController;
